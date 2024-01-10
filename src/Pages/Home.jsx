@@ -1,7 +1,7 @@
 import React from 'react'
 import {Header, Footer, ProdcutItem} from '../Components/index'
 
-const Home = () => {
+const Home = (props) => {
   return (
     <>
     <Header />
@@ -38,8 +38,33 @@ const Home = () => {
 
         <h3 className='fw-bold py-5'>Latest Products</h3>
         <div className='row'>
-            <ProdcutItem />
-            <ProdcutItem />
+
+            <ProdcutItem   
+            img="https://source.unsplash.com/random/300x300/?Burger"
+            title="jambo burger"
+            card="Add To Card"
+            price="Rs. 70"
+            />
+
+            <ProdcutItem   
+            img="https://source.unsplash.com/random/300x300/?pizza"
+            title="Pizza"
+            card="Add To Card"
+            price="Rs. 239"
+            />
+            
+            <ProdcutItem   
+            img="https://source.unsplash.com/random/300x300/?coffe"
+            title="Coffe"
+            card="Add To Card"
+            price="Rs. 125"
+            />
+            <ProdcutItem   
+            img="https://source.unsplash.com/random/300x300/?sandwich"
+            title="sandwich"
+            card="Add To Card"
+            price="Rs. 90"
+            />
 
         
 
